@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Chomp</title>
+</head>
+<body>
+    <header>
+      <div class="container">
+        <a href="#"><img src="./images/logo.svg" alt="" class="logo"></a>
+
+        <nav>
+            <ul class="nav-list">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="index.html" class="nav-link">Order</a></li>
+                <li class="nav-item"><a href="index.html" class="nav-link">Company</a></li>
+                <li class="nav-item"><a href="index.html" class="nav-link">FAQ</a></li>
+                <li class="nav-item"><a href="index.html" class="nav-link">Contact</a></li>
+                <li class="nav-item"><a href="index.html" class="nav-link"><i class="fas fa-shopping-cart"></i></a></li>
+            </ul>
+        </nav>
+
+        
+        <div class="hamburger-menu">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+        <!-- hero section -->
+        <article class="hero">
+            <div class="container">
+                <div class="info">
+                    <h1 class="title">Beautiful food & takeaway, <span>delivered</span> to your door.</h1>
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias molestiae voluptatum impedit alias corrupti officiis provident maiores! Excepturi, doloribus reprehenderit!</p>
+    
+                    <a href="#" class="btn">Place an Order</a>
+    
+                    <p class="text text-star"><span>&#9733;</span>Trustpilot</p>
+                    <p class="text"><span class="rating">4.8 out of 5</span> based on 2000+ reviews</p>
+                </div>
+
+                <img src="./images/hero-1.png" alt="">
+            </div>
+        </article>
+
+        <!-- about section -->
+        <article class="about">
+            <div class="container">
+                <div class="info">
+                    <h2 class="title">The home of fresh products.</h2>
+                    <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique consequatur dolorum, ex laborum qui quas cum. Esse repudiandae veritatis sequi?</p>
+                    <a href="#" class="btn">Learn about us</a>
+                </div>
+    
+                <img src="./images/intro.png" alt="">
+            </div>
+        </article>
+
+        <!-- services -->
+        <article class="services">
+            <div class="container">
+                <h2 class="title">How it works.</h2>
+
+            <div class="service-list">
+                <div class="service service-1">
+                    <img src="./images/services-1.png" alt="">
+                    <h3 class="title">Adapt your menu items</h3>
+                    <p class="text">Easily adapt your menu using the webflow CMS and allow customers to browse your items.</p>
+                </div>
+
+                <div class="service service-2">
+                    <img src="./images/services-2.png" alt="">
+                    <h3 class="title">Accept online orders & takeout</h3>
+                    <p class="text">Let your customers order and pay via the powerful ecommerce system, or simple let them call your store.</p>
+                </div>
+
+                <div class="service service-3">
+                    <img src="./images/services-3.png" alt="">
+                    <h3 class="title">Manage delivery or takeout</h3>
+                    <p class="text">Manage your own logistics and take orders simply through the ecommerce system.</p>
+                </div>
+             </div>
+            </div>
+        </article>
+
+        <!-- menu -->
+        <article class="menu">
+            <div class="container">
+                <h2 class="title">Browse our menu</h2>
+                <p class="text main-text">Use our menu to place an order online, or phone our store to
+                    place a pickup order. Fast and fresh food.</p>
+
+                <div class="options">
+                     <a href="#" class="option btn" onclick="openMenu(event, 'burger')" id="default">Burgers</a>
+                     <a href="#" class="option btn" onclick="openMenu(event, 'sides')">Sides</a>
+                     <a href="#" class="option btn" onclick="openMenu(event, 'drinks')">Drinks</a>
+                </div>   
+                
+                <div class="items">
+
+                    <div class="items-grid" id="burger">
+                      <div class="item item-1">
+                          <img src="./images/burger-1.png" alt="">
+     
+                          <div class="info">
+                              <p class="price">$9.20</p>
+                              <h3>Burger Dreams</h3>
+                              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem, in.</p>
+                              <form action="#">
+                                 <input type="number" min="1" value="1">
+                                 <a href="#" class="add btn">Add To Cart</a>
+                             </form>
+                          </div>
+                      </div>
+     
+                      <div class="item item-2">
+                         <img src="./images/burger-2.png" alt="">
+     
+                         <div class="info">
+                             <p class="price">$10.00</p>
+                             <h3>Burger Waldo</h3>
+                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem, in.</p>
+                             <form action="#">
+                                 <input type="number" min="1" value="1">
+                                 <a href="#" class="add btn">Add To Cart</a>
+                             </form>
+                         </div>
+                     </div>
+     
+                     <div class="item item-3">
+                         <img src="./images/burger-3.png" alt="">
+     
+                         <div class="info">
+                             <p class="price">$8.00</p>
+                             <h3>Burger Cali</h3>
+                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem, in.</p>
+                             <form action="#">
+                                 <input type="number" min="1" value="1">
+                                 <a href="#" class="add btn">Add To Cart</a>
+                             </form>
+                         </div>
+                     </div>
+     
+                     <div class="item item-4">
+                         <img src="./images/burger-4.png" alt="">
+     
+                         <div class="info">
+                             <p class="price">$9.99</p>
+                             <h3>Burger Bacon Buddy</h3>
+                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem, in.</p>
+                             <form action="#">
+                                 <input type="number" min="1" value="1">
+                                 <a href="#" class="add btn">Add To Cart</a>
+                             </form>
+                         </div>
+                     </div>
+     
+                     <div class="item item-5">
+                         <img src="./images/burger-5.png" alt="">
+     
+                         <div class="info">
+                             <p class="price">$9.20</p>
+                             <h3>Burger Spicy</h3>
+                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem, in.</p>
+                             <form action="#">
+                                 <input type="number" min="1" value="1">
+                                 <a href="#" class="add btn">Add To Cart</a>
+                             </form>
+                         </div>
+                     </div>
+     
+                     <div class="item item-6">
+                         <img src="./images/burger-6.png" alt="">
+     
+                         <div class="info">
+                             <p class="price">$8.00</p>
+                             <h3>Burger Classic</h3>
+                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem, in.</p>
+                             <form action="#">
+                                 <input type="number" min="1" value="1">
+                                 <a href="#" class="add btn">Add To Cart</a>
+                             </form>
+                         </div>
+                     </div>
+                   </div>
+     
+                   <div class="items-grid" id="sides">
+                     <div class="item item-1">
+                         <img src="./images/sides-1.png" alt="">
+     
+                         <div class="info">
+                             <p class="price">$6.00</p>
+                             <h3>Salad Ceaser</h3>
+                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem, in.</p>
+                             <form action="#">
+                                <input type="number" min="1" value="1">
+                                <a href="#" class="add btn">Add To Cart</a>
+                            </form>
+                         </div>
+                     </div>
+     
+                     <div class="item item-2">
+                        <img src="./images/sides-2.png" alt="">
+     
+                        <div class="info">
+                            <p class="price">$4.00</p>
+                            <h3>Beans Slow Cooked</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem, in.</p>
+                            <form action="#">
+                                <input type="number" min="1" value="1">
+                                <a href="#" class="add btn">Add To Cart</a>
+                            </form>
+                        </div>
+                    </div>
+     
+                    <div class="item item-3">
+                        <img src="./images/sides-3.png" alt="">
+     
+                        <div class="info">
+                            <p class="price">$5.00</p>
+                            <h3>Fries Cheese</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem, in.</p>
+                            <form action="#">
+                                <input type="number" min="1" value="1">
+                                <a href="#" class="add btn">Add To Cart</a>
+                            </form>
+                        </div>
+                    </div>
+     
+                    <div class="item item-4">
+                        <img src="./images/sides-4.png" alt="">
+     
+                        <div class="info">
+                            <p class="price">$4.00</p>
+                            <h3>Fries Rustic</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem, in.</p>
+                            <form action="#">
+                                <input type="number" min="1" value="1">
+                                <a href="#" class="add btn">Add To Cart</a>
+                            </form>
+                        </div>
+                    </div>                              
+                  </div>
+                 
+     
+                  <div class="items-grid" id="drinks">
+                     <div class="item item-1">
+                         <img src="./images/drinks-1.png" alt="">
+     
+                         <div class="info">
+                             <p class="price">$4.00</p>
+                             <h3>Drink Fig & Lime</h3>
+                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem, in.</p>
+                             <form action="#">
+                                <input type="number" min="1" value="1">
+                                <a href="#" class="add btn">Add To Cart</a>
+                            </form>
+                         </div>
+                     </div>
+     
+                     <div class="item item-2">
+                        <img src="./images/drinks-2.png" alt="">
+     
+                        <div class="info">
+                            <p class="price">$7.00</p>
+                            <h3>Drink Liquor</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem, in.</p>
+                            <form action="#">
+                                <input type="number" min="1" value="1">
+                                <a href="#" class="add btn">Add To Cart</a>
+                            </form>
+                        </div>
+                    </div>
+     
+                    <div class="item item-3">
+                        <img src="./images/drinks-3.png" alt="">
+     
+                        <div class="info">
+                            <p class="price">$4.00</p>
+                            <h3>Drink Lime</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem, in.</p>
+                            <form action="#">
+                                <input type="number" min="1" value="1">
+                                <a href="#" class="add btn">Add To Cart</a>
+                            </form>
+                        </div>
+                    </div>
+     
+                    <div class="item item-4">
+                        <img src="./images/drinks-4.png" alt="">
+     
+                        <div class="info">
+                            <p class="price">$3.00</p>
+                            <h3>Drink Cola</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem, in.</p>
+                            <form action="#">
+                                <input type="number" min="1" value="1">
+                                <a href="#" class="add btn">Add To Cart</a>
+                            </form>
+                        </div>
+                    </div>                              
+                  </div>
+     
+                </div>          
+     
+            <a href="#" class="full-menu-btn btn">See Full Menu</a>
+
+        </div><!--container div ends here -->
+      </article>
+
+        <article class="faq">
+            <div class="container">
+                <img src="./images/faq image.png" alt="">
+
+                <div class="info">
+                    <h2 class="title">Order online with our simple checkout.</h2>
+
+                    <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. In aliquid alias, fugit eveniet laboriosam ullam eos. Dicta iusto enim unde id rerum ex exercitationem architecto. Commodi quisquam omnis similique neque!</p>
+
+                    <a href="#" class="btn">See our FAQ</a>
+                </div>
+            </div>
+        </article>
+
+        <article class="takeaway">
+            <div class="container">
+                <div class="info">
+                    <h2 class="title">Call our store and takeaway when it suits you best.</h2>
+    
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, ab? Nobis officiis voluptate voluptas minus fugiat placeat laboriosam recusandae doloribus.</p>
+    
+                    <a href="#" class="btn">Ph. +61 233 2333</a>
+                </div>
+    
+                <img src="./images/takeaway.png" alt="">
+            </div>
+        </article>
+
+        <article class="order">
+            <div class="container">
+                <img src="./images/order.jpg" alt="">
+
+                <div class="info">
+                    <h2 class="title"><span>Support</span> good food
+                        and local business.</h2>
+                    <a href="#" class="btn">Order Now</a>
+                </div>
+            </div>
+        </article>
+        <script src="main.js"></script>
+    </main>
+
+    <footer> 
+        <div class="container">
+            <div class="footer-description">
+                <img src="./images/logo.svg" alt="">
+                <p class="text">Take away and delivery.</p><br>
+                <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad, magni dolores non aliquam sunt ipsum cumque. Pariatur possimus mollitia blanditiis.</p>
+            </div>
+         
+    
+            <div class="navigation">
+                <h3 class="title">COMPANY</h3>
+    
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Order</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+    
+            <div class="social">
+                <h3 class="title">Subscribe to our newsletter.</h3>
+    
+                <div class="form">
+                    <input type="email" class="email" placeholder="Email Address">
+                    <a type="submit" class="btn"><i class="fas fa-paper-plane"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
